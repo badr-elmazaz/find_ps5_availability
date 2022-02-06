@@ -1,0 +1,8 @@
+{
+"mode": "selenium",
+"browser":{
+"name": "chrome",
+"headless": false
+}
+
+}

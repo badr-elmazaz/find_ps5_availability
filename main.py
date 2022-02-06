@@ -1,7 +1,13 @@
+import os
+import json
+
 from fastapi import FastAPI, Depends
 import uvicorn
 from config import *
 
+config_path=os.path.join(os.getcwd(), "config.json")
+with open(config_path) as f:
+    config = json.loads(f)
 
 app = FastAPI()
 
